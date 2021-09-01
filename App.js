@@ -83,7 +83,7 @@ const App = () => {
     setCards(items);
     await AsyncStorage.setItem('items', JSON.stringify(items));
 
-    return Alert.alert('Appunto.', 'Fai veramente schifo... quando inizierai ad essere qualcun*.')
+    return Alert.alert('Appunto.', 'Fai veramente pena... quando inizierai ad essere qualcun*?')
   }
 
   const _keyboardDidShow = (event) => {
@@ -129,12 +129,12 @@ const App = () => {
             })
           }
 
-          {cards.length > 0 ? null : <Text style={{ textAlign: 'center', color: isDarkMode ? '#fff' : '#111' }}>Coglione fai qualcosa di produttivo!. A vero sei tu...</Text>}
+          {cards.length > 0 ? null : <Text style={{ textAlign: 'center', color: isDarkMode ? '#fff' : '#111' }}>Co***ne fai qualcosa di produttivo!. A vero, sei...</Text>}
         </View>
       </ScrollView>
 
       <Animated.View style={isDarkMode ? { ...stylesDark.searchBar, bottom: KBOffset } : { ...stylesLight.searchBar, bottom: KBOffset }}>
-        <TextInput onSubmitEditing={handleAddBox} value={text} onChangeText={val => setText(val)} placeholder="Scrivi cosa fare pezzo di merda..." style={isDarkMode ? stylesDark.inputBar : stylesLight.inputBar} />
+        <TextInput onSubmitEditing={handleAddBox} value={text} onChangeText={val => setText(val)} placeholder="Scrivi cosa fare pezzo di me**a..." style={isDarkMode ? stylesDark.inputBar : stylesLight.inputBar} />
       </Animated.View>
     </SafeAreaView>
   );
